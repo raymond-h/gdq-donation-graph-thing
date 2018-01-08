@@ -1,5 +1,18 @@
 {
-	"env": {
-		"node": true
-	}
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 8
+    },
+    "extends": "kellyirc",
+    "rules": {
+        "require-yield": "off",
+        "space-before-function-paren": ["error", {
+            "anonymous": "never",
+            "named": "never",
+            "asyncArrow": "always"
+        }]
+    }
 }
