@@ -1,0 +1,17 @@
+{
+	"name": "",
+	"description": "GDQ graph-thing donation",
+	"author": "Raymond Hammarling",
+	"license": "MIT",
+	"scripts": {
+		"lint": "eslint lib/ test/",
+		"test": "ava",
+		"watch": "ava -w",
+		"prepublish": "run-s lint test"
+	},
+	"devDependencies": {
+		"ava": "^0.24.0",
+		"eslint": "^4.15.0",
+		"npm-run-all": "^4.1.2"
+	}
+}
